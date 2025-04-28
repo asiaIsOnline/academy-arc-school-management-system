@@ -97,7 +97,7 @@ const Menu = () => {
         <div className='mt-4' key={i.title}>
           <h4 className='mb-2 hidden lg:block'>{i.title}</h4>
           {i.items.map(item => (
-            <Link href={item.href} key={item.label} className='flex gap-2 p-2 justify-center lg:justify-start'>
+            <Link href={item.href} key={item.label} className='flex gap-2 p-2 justify-center lg:justify-start text-slate-800'>
               <Image
                 src={item.icon}
                 alt=''
