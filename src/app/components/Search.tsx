@@ -3,9 +3,15 @@ import { FiSearch } from "react-icons/fi";
 
 const Search = () => {
   return (
-    <div className='flex gap-2'>
-        <FiSearch style={{ fontSize: '1.25em' }}/>
-        <input type="text" placeholder='Search...'/>
+    <div className='flex items-center'>
+        <input 
+          type="text" 
+          placeholder='Search...'
+          className='h-full'
+          />
+          <div className='w-full h-full bg-slate-100 border flex items-center px-2'>
+            <FiSearch style={{ fontSize: '1.5em' }}/>
+          </div>
     </div>
   )
 }
